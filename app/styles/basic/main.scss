@@ -141,3 +141,35 @@
   min-width: 100px;
 }
 
+.example {
+  margin-bottom: 5em;
+}
+
+.example__title {
+  color: black;
+  font-size: 24px;
+}
+
+.example__subtitle {
+  color: black;
+  font-size: 18px;
+}
+
+.message-ball {
+  font-size: 20px;
+  line-height: 200px;
+  text-align: center;
+}
+.circle {
+  transition-property: width, height, margin-left, margin-top;
+  transition-duration: 2s;
+  position: relative;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: red;
+  border-radius: 50%;
+}
+
+.circle-wrapper {
+  height: 250px;
+  min-width: 150px;
+}
