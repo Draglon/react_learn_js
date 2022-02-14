@@ -6,6 +6,8 @@ const PromisesComponent = ({
   onPlayAnimation,
   onPlayQuery,
   onPlayPromisify,
+  onPlayPromiseAll,
+  onPlayPromiseAllSettled,
 }) => (
   <Layout className="layout">
     <div className="top-margin">
@@ -48,6 +50,20 @@ const PromisesComponent = ({
       <h2 className='example__subtitle'>Промисификация:</h2>
       <p className='text'>Промисификация колбека loadsrc.</p>
       <button type="button" className='btn-play' onClick={onPlayPromisify}>Play</button>
+    </div>
+
+    <div className='example'>
+      <h1 className='example__title'>Пример 5:</h1>
+      <h2 className='example__subtitle'>Promise.all:</h2>
+      <p className='text'></p>
+      <button type="button" className='btn-play' onClick={onPlayPromiseAll}>Play</button>
+    </div>
+
+    <div className='example'>
+      <h1 className='example__title'>Пример 6:</h1>
+      <h2 className='example__subtitle'>Promise.allSettled:</h2>
+      <p className='text'></p>
+      <button type="button" className='btn-play' onClick={onPlayPromiseAllSettled}>Play</button>
     </div>
   </Layout>
 );
