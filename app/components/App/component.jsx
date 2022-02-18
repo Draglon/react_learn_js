@@ -7,6 +7,7 @@ import Header from '../Header';
 
 import Home from '../Home';
 import Promise from '../Promise';
+import Generators from '../Generators';
 import NotFound from '../NotFound';
 
 import PrivateRoute from './PrivateRoute';
@@ -19,6 +20,7 @@ const AppComponent = ({ sessionId }) => (
         <Switch>
           <Route exact path="/" component={Home} />
           <PrivateRoute exact path="/promise" component={Promise} />
+          <PrivateRoute exact path="/generators" component={Generators} />
           <PrivateRoute component={NotFound} />
         </Switch>
       </Layout.Content>

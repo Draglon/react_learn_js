@@ -3,8 +3,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { createLogicMiddleware } from 'redux-logic';
 
 import apiClient from '../apiClient/client';
-import rootLogic from './theMovieDB/logic';
-import reducers from './theMovieDB/reducers';
+import rootLogic from './concepts/logic';
+import reducers from './concepts/reducers';
 
 const logicMiddleware = createLogicMiddleware(rootLogic, {
   apiClient,

@@ -1,41 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FavoritesComponent /> Render snapshot - FavoritesComponent 1`] = `
-<Fragment>
-  <Row
-    gutter={0}
+<Layout
+  className="layout"
+>
+  <div
+    className="top-margin"
   >
-    <Col
-      offset={2}
-      span={20}
+    <Title>
+      Промисы, async/await
+    </Title>
+  </div>
+  <div
+    className="example"
+  >
+    <h1
+      className="example__title"
+    >
+      Пример 1:
+    </h1>
+    <h2
+      className="example__subtitle"
+    >
+      Пример с задержкой времени:
+    </h2>
+    <p
+      className="example__text"
+    >
+      Функция выполнится автоматически, при вызове new Promise, через 1 секунду сигнализировать, что задача выполнена с результатом "done"
+    </p>
+    <div
+      className="example__html-code"
+    >
+      <pre>
+        <code>
+          let promise = new Promise((resolve, reject) =&gt; setTimeout(() =&gt; resolve("done"), 1000))
+        </code>
+      </pre>
+      <button
+        className="example__btn-play"
+        type="button"
+      >
+        Play
+      </button>
+    </div>
+  </div>
+  <div
+    className="example"
+  >
+    <h1
+      className="example__title"
+    >
+      Пример 2:
+    </h1>
+    <h2
+      className="example__subtitle"
+    >
+      Aнимация круга с помощью промиса:
+    </h2>
+    <p
+      className="example__text"
+    >
+      Отрисовать анимацию и вывести сообщение после отрисовки.
+    </p>
+    <button
+      className="example__btn-play"
+      type="button"
+    >
+      Play
+    </button>
+    <div
+      className="circle-wrapper"
     >
       <div
-        className="top-margin"
-      >
-        <Title>
-          Favorites
-        </Title>
-      </div>
-    </Col>
-  </Row>
-  <MovieListComponent
-    modalParams={
-      Object {
-        "favorite": false,
-      }
-    }
-    movies={
-      Array [
-        1,
-        2,
-        3,
-      ]
-    }
-  />
-  <PaginationComponent
-    currentPage={1}
-    page={[Function]}
-    totalPages={100}
-  />
-</Fragment>
+        className="circle"
+        id="circle"
+      />
+    </div>
+  </div>
+  <div
+    className="example"
+  >
+    <h1
+      className="example__title"
+    >
+      Пример 3:
+    </h1>
+    <h2
+      className="example__subtitle"
+    >
+      Цепочка промисов:
+    </h2>
+    <p
+      className="example__text"
+    >
+      Вывести результат цепочки промисов перемножая на 10
+    </p>
+    <button
+      className="example__btn-play"
+      type="button"
+    >
+      Play
+    </button>
+  </div>
+  <div
+    className="example"
+  >
+    <h1
+      className="example__title"
+    >
+      Пример 4:
+    </h1>
+    <h2
+      className="example__subtitle"
+    >
+      Промисификация:
+    </h2>
+    <p
+      className="example__text"
+    >
+      Промисификация колбека loadsrc.
+    </p>
+    <button
+      className="example__btn-play"
+      type="button"
+    >
+      Play
+    </button>
+  </div>
+  <div
+    className="example"
+  >
+    <h1
+      className="example__title"
+    >
+      Пример 5:
+    </h1>
+    <h2
+      className="example__subtitle"
+    >
+      Promise.all:
+    </h2>
+    <p
+      className="example__text"
+    />
+    <button
+      className="example__btn-play"
+      type="button"
+    >
+      Play
+    </button>
+  </div>
+  <div
+    className="example"
+  >
+    <h1
+      className="example__title"
+    >
+      Пример 6:
+    </h1>
+    <h2
+      className="example__example__subtitle"
+    >
+      Promise.allSettled:
+    </h2>
+    <p
+      className="text"
+    />
+    <button
+      className="example__btn-play"
+      type="button"
+    >
+      Play
+    </button>
+  </div>
+</Layout>
 `;

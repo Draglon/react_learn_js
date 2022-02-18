@@ -1,6 +1,6 @@
 import React from 'react';
 import configureStore from 'redux-mock-store';
-import { createSessionRequest } from '../../../../store/theMovieDB/login/actions';
+import { createSessionRequest } from '../../../../store/concepts/login/actions';
 
 import LoginFormContainer from '../container';
 

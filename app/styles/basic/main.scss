@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 .page {
   background-color: $white;
   font-size: $font-size-base;
@@ -117,28 +124,18 @@
   padding: 20px;
 }
 
-.nav-link {
-  font-size: 24px;
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
-.text {
-  color: black;
-  font-size: 14px;
-  padding-bottom: 10px;
+.nav__item {
+  margin-bottom: 10px;
 }
 
-.html-code {
-  background-color: coral;
+.nav__link {
   font-size: 14px;
-  color: white;
-  padding: 15px;
-}
-
-.btn-play {
-  color: black;
-  font-weight: bold;
-  font-size: 14px;
-  min-width: 100px;
 }
 
 .example {
@@ -153,6 +150,26 @@
 .example__subtitle {
   color: black;
   font-size: 18px;
+}
+
+.example__btn-play {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 100px;
+}
+
+.example__text {
+  color: black;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.example__html-code {
+  background-color: coral;
+  font-size: 14px;
+  color: white;
+  padding: 15px;
 }
 
 .message-ball {

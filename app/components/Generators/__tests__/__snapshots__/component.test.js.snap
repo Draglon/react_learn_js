@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generators component matches snapshot with default props 1`] = `
+<Layout
+  className="layout"
+>
+  <div
+    className="top-margin"
+  >
+    <Title>
+      Генераторы
+    </Title>
+  </div>
+  <div
+    className="example"
+  >
+    <h1
+      className="example__title"
+    >
+      Пример 1:
+    </h1>
+    <h2
+      className="example__subtitle"
+    >
+      Клендарь
+    </h2>
+    <p
+      className="example__text"
+    />
+    <div
+      className="example__html-code"
+    >
+      <div
+        className="calendar"
+      >
+        <ul
+          className="calendar__list"
+        >
+          <li
+            className="calendar__list"
+          >
+            <div>
+              Number
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button
+        className="example__btn-play"
+        type="button"
+      >
+        Play
+      </button>
+    </div>
+  </div>
+</Layout>
+`;

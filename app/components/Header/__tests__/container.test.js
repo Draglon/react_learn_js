@@ -1,7 +1,7 @@
 import React from 'react';
 import configureStore from 'redux-mock-store';
 
-import { profileRequest } from '../../../store/theMovieDB/profile/actions';
+import { profileRequest } from '../../../store/concepts/profile/actions';
 import HeaderContainer from '../container';
 
 describe('<HeaderContainer />', () => {
